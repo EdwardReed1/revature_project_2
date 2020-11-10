@@ -1,6 +1,6 @@
-### GET https://api.twitter.com/1.1/geo/reverse_geocode.json?lat=37.781157&long=-122.398720&granularity=neighborhood
+#### GET https://api.twitter.com/1.1/geo/reverse_geocode.json?lat=37.781157&long=-122.398720&granularity=neighborhood
 
-### Result (JSON):
+#### Result (JSON):
 
 ```
 {
