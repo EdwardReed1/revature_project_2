@@ -25,3 +25,7 @@
 | Detroit       | 2391585 |
 | Oklahoma City | 2464592 |
 | Portland, OR  | 2475687 |
+
+---
+
+Generated at [Tables Generator](https://www.tablesgenerator.com/markdown_tables)
