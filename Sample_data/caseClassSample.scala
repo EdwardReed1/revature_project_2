@@ -1,4 +1,5 @@
 // Possible case class structure
+// Built at https://json2caseclass.cleverapps.io/
 
 case class Trends(
   name: String,
