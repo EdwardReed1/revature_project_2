@@ -27,7 +27,7 @@ object Runner {
 
     //this will read every json file in a directory and put into the same dataframe
     //this can be changed to
-    val Trendingdf = spark.read.option("multiline", "true").json("Phoenix_jsons")
+    val Trendingdf = spark.read.option("multiline", "false").json("first-run")
 
     //comment out the line above and use this one to make it read the arguments passed into it
     //val Trendingdf = spark.read.option("multiline", "true").json(inputPath)
@@ -38,41 +38,41 @@ object Runner {
     Trendingdf.show()
     Trendingdf.printSchema()
 
-
-    //simple query to show the names of trending items
-
-    Trendingdf.groupBy("name").count().show()
-
-    //this will show the name and tweet_volume of tweets and will show them in descending order
-    //  of tweet volume
-
-    Trendingdf.select("name", "tweet_volume").orderBy(desc("tweet_volume")).show()
-
-    //this will show the name and will display how many times that name showed up in the json files
-    //  which should be the total hours trending.  It will then show them in descending order of the
-    //  total trending hours.
-
-    Trendingdf.groupBy("name")
-      .agg(count("name").alias("Total hours trending"))
-      .orderBy(desc("Total hours trending"))
-      .show()
-
-    //this is similar to the query above but it takes the average of the tweet volume instead
-    Trendingdf.groupBy("name")
-      .agg(avg("tweet_volume").alias("Average tweet volume per hour"))
-      .orderBy(desc("Average tweet volume per hour"))
-      .show()
-
-    //creating a dataset from the dataframe
-
-    val Trendingds = Trendingdf.as[Trend]
-
-    Trendingds.show()
-
-    Trendingds.printSchema()
-
-    Trendingds.filter(trend => trend.name.length < 6).show()
-
+//
+//    //simple query to show the names of trending items
+//
+//    Trendingdf.groupBy("name").count().show()
+//
+//    //this will show the name and tweet_volume of tweets and will show them in descending order
+//    //  of tweet volume
+//
+//    Trendingdf.select("name", "tweet_volume").orderBy(desc("tweet_volume")).show()
+//
+//    //this will show the name and will display how many times that name showed up in the json files
+//    //  which should be the total hours trending.  It will then show them in descending order of the
+//    //  total trending hours.
+//
+//    Trendingdf.groupBy("name")
+//      .agg(count("name").alias("Total hours trending"))
+//      .orderBy(desc("Total hours trending"))
+//      .show()
+//
+//    //this is similar to the query above but it takes the average of the tweet volume instead
+//    Trendingdf.groupBy("name")
+//      .agg(avg("tweet_volume").alias("Average tweet volume per hour"))
+//      .orderBy(desc("Average tweet volume per hour"))
+//      .show()
+//
+//    //creating a dataset from the dataframe
+//
+//    val Trendingds = Trendingdf.as[Trend]
+//
+//    Trendingds.show()
+//
+//    Trendingds.printSchema()
+//
+//    Trendingds.filter(trend => trend.name.length < 6).show()
+//
 
   }
 
