@@ -33,4 +33,4 @@ Q2: If so, can we identify separate regions for these patterns? ex.: North Ameri
 Q3: What about global scale patterns for specific events? ex.: Burning of Notre Dame-how did this topic travel according to twitter usage?  
 
 ### Raw data
-Raw twitter api responses available at: (responses_11_16_2020.tar.gz)[https://drive.google.com/file/d/1nC1y_EXvfCptXLBt8k-hBk_av-5R-eL_/view?usp=sharing] (2.2mb)
+Raw twitter api responses available at: [responses_11_16_2020.tar.gz](https://drive.google.com/file/d/1nC1y_EXvfCptXLBt8k-hBk_av-5R-eL_/view?usp=sharing) (2.2mb)
