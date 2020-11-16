@@ -28,6 +28,6 @@ Requirements:
 - Presentations will take place on Monday, 11/23
 
 Questions-
-Q1: Can we identify patterns in trending topics being popular in one location and then moving to others?
-Q2: If so, can we identify separate regions for these patterns? ex.: North American patterns, East Asian patterns, etc.
-Q3: What about global scale patterns for specific events? ex.: Burning of Notre Dame-how did this topic travel according to twitter usage?
+Q1: Can we identify patterns in trending topics being popular in one location and then moving to others?  
+Q2: If so, can we identify separate regions for these patterns? ex.: North American patterns, East Asian patterns, etc.  
+Q3: What about global scale patterns for specific events? ex.: Burning of Notre Dame-how did this topic travel according to twitter usage?  
