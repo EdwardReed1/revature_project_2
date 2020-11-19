@@ -49,7 +49,7 @@ object SimplifyData {
   }
 
   def otherSimplify(spark: SparkSession) = {
-    val myRdd = spark.read.option("header", "true").csv("sample_data.csv").rdd
+    val myRdd = spark.read.option("header", "true").csv("sample-data.csv").rdd
 
    // myRdd.foreach(f => {
    //   println(s"${f(0)}, ${f(1)}, ${f(2)}, ${f(3)}, ${f(4)}")
@@ -58,16 +58,29 @@ object SimplifyData {
     println(" ")
 
     val secRdd = myRdd.map(trend =>
-      if (trend(0).toString.equalsIgnoreCase("name")) {
+      //Checks to make sure that there are 5 elements on each line in the csv file
+      if (trend.length != 5) {
+
+      }
+
+      //Checks to make sure that the timestamp is the appropriate size, to avoid string index out of bounds
+      else if (trend(2).toString.length != 20) {
+
+      }
+
+      //The line is a header in the file
+      else if (trend(0).toString.equalsIgnoreCase("name")) {
         (trend(0).toString, trend(1).toString, trend(2).toString, "Hour(24-hour clock)", "Rank", trend(4).toString)
       }
+
+      //If the line is properly formatted and is not a header
       else {
         (trend(0).toString, trend(1).toString, trend(2).toString.substring(0, 9), trend(2).toString.substring(11, 13), trend(3).toString.toLong, trend(4).toString.toLong)
       }
 
     )
 
-    secRdd.foreach(println)
+    //secRdd.saveAsTextFile("input.txt")
   }
 
 }
