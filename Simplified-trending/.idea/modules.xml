@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Simplified-trending.iml" filepath="$PROJECT_DIR$/.idea/modules/Simplified-trending.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Simplified-trending-build.iml" filepath="$PROJECT_DIR$/.idea/modules/Simplified-trending-build.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Trending-queries.iml" filepath="$PROJECT_DIR$/.idea/modules/Trending-queries.iml" />
     </modules>
   </component>
 </project>
