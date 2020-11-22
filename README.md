@@ -34,12 +34,13 @@ Q3: What about global scale patterns for specific events? ex.: Burning of Notre 
 
 ### Instructions
 
-To stream Twitter trend data using Spark streaming, clone he `Project-2 @ 5748ae0` repository.
-To convert Twitter trend API response to "trend objects" for analysis, clone the `transformer-pj2 @ 9359f89` repository.
-To do analysis on the "trend objects", clone this repository and cd into `Simplified-trending` repository.
+* To stream Twitter trend data using Spark streaming, clone he `Project-2 @ 5748ae0` repository.
+* To convert Twitter trend API response to "trend objects" for analysis, clone the `transformer-pj2 @ 9359f89` repository.
+* To do analysis on the "trend objects", clone this repository and cd into `Simplified-trending` repository.
+
+There is a rather large (409K) list of trend objects available as `processed_trends_full_dataset.csv` if you would like to move straight to analaysis.  Just copy the file into the Simplified-trending directory and designate it as the input file.
 
 There are links to sample (unprocessed data) below.  
-There is also a large (409K) list of trend objects available as `processed_trends_full_dataset.csv` if you would like to move straight to analaysis.  Just copy the file into the Simplified-trending directory and designate it as the input file.
 
 ### Raw data
 - Sample data (gDrive): [sample-trend-data-11_13-19_20202.tar.gz](https://drive.google.com/file/d/1fN3BjOMfke32r7TVxRaNu-1yT9JtYYah/view?usp=sharing) 823kb gzipped, 13mb unzipped.
