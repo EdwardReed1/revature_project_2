@@ -2,3 +2,6 @@
 	path = pj2
 	url = https://github.com/dannyhlee/pj2
 
+[submodule "Project-2"]
+	path = Project-2
+	url = git@github.com:Nahshon-Revature/Project-2.git
