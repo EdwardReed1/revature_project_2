@@ -4,7 +4,7 @@
 		module="simplified-trending-build"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20201116164417"
+		publication="20201122150906"
 		e:sbtVersion="1.0" e:scalaVersion="2.12"
 	>
 		<description>

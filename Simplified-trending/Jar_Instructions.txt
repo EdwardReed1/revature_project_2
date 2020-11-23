@@ -1,0 +1,93 @@
+This document will detail what each jar in this folder does, and the correct agruments to use in the jar.  If you want to see the code for each jar, 
+they are all in the Trending_queries folder in the gitgub repository and that folder can be imported an ran as a project in IntelliJ which also has
+and input file that can be queried by each method. There is also documentation before each method in the project so you can see which jar it corresponds to.
+The jars were too big to be pushed to github, so a google drive folder was created instead, here is the link to the folder: 
+
+https://drive.google.com/drive/folders/1GIPoEdM4DBo7Z6XwmLnkQ6AeXZgW86nM?usp=sharing
+
+Also one thing to note about all of the jars, they all create a folder that will hold the output as a .csv file and they have the overwrite option
+enabled, so if you specify the output folder name as the same one as a folder that already exists, the pre-existing folder will be overwritten by the 
+output, so be careful what you call the output folder when using the jars otherwise a folder that you already have could be deleted and replaced.
+
+
+--Find-Average-Rank--
+
+This jar will, for every trend in the dataset, show the average rank of the trend and will find the total number of hours it has been cumulatively 
+trending for throughout all of the locations. For example, if a trend was trending for one hour in Houston at number 5 and another hour in Boston 
+at number 1, the query will return 2 total hours trending with an average rank of 3.
+
+The format for using the jar is -jar Find-Average-Rank.jar inputPath outputPath
+Where inputPath is the path to the file that contains the dataset to be queries and outputPath is the path to the folder that will hold the output.
+
+
+--Find-Highest-Ranks--
+
+This jar will, for each trend in the dataset, find the location, date, and hour that that trend was at it's at its highest trending point.
+
+Note: if a trend was at that point more than once (ex. a trend was trending at #1 at multiple locations or during multiple hours), then each instance
+will appear in the output.
+
+The format for this jar is -jar Find-Highest-Ranks.jar inputPath outputPath
+Where inputPath is the path to the file that contains the dataset to be queries and outputPath is the path to the folder that will hold the output.
+
+
+--Find-Hours-Trending--
+
+This method will, for a given trend, find the number of hours that it was trending between every location in the dataset.
+
+This format for this jar is  -jar Find-Hours-Trending.jar filter inputPath outputPath
+Where filter is the name of the trend that you are filtering the query by, inputPath is the path to the file that contains the dataset to be queries 
+and outputPath is the path to the folder that will hold the output.
+
+--Find-Number-Of-Tweets--
+
+One thing to note about the tweet volume(number of tweets) is that the Twitter API did not log the value for every trend, and in those cases the 
+value was shown as null in the API.  We handled these values by making the value 0 rather than null, so if a trend has a tweet volume of 0, it was 
+most likely not logged by the Twitter API.
+
+This jar has two different functionalities depending on the number of parameter passed after you call the jar (either 2 or 3).
+
+(With 2 parameters)
+
+When ran with two parameters this jar will show every trend and the tweet volume associated with that trend.
+
+The format for using this jar with two parameters is -jar Find-Number-Of-Tweets.jar inputPath outputPath
+Where inputPath is the path to the file that contains the dataset to be queries and outputPath is the path to the folder that will hold the output.
+
+(With 3 parameters)
+
+When ran with three parameters this jar will show a specified trends tweet volume.
+
+The format for using this jar with three parameters is -jar Find-Number-Of-Tweets.jar filter inputPath outputPath
+Where filter is the name of the trend that you are filtering the query by, inputPath is the path to the file that contains the dataset to be queries 
+and outputPath is the path to the folder that will hold the output.
+
+--Show-Top-Trends--
+
+This jar has two different functionalities depending on the number of parameters passed after you call the jar (either 2 or 3).
+
+(With 2 parameters)
+
+When ran with two parameters this jar will show every trend, as well as the location, date, and hour that it was trending if that trend was trending number
+one in a location.
+
+The format for using the jar is -jar Show-Top-Trends.jar inputPath outputPath
+Where inputPath is the path to the file that contains the dataset to be queries and outputPath is the path to the folder that will hold the output.
+
+(With 3 parameters)
+
+When ran with three parameters this jar will, for a specified location, show every trend that trending number one in the location as well as show the date and
+hour when it was trending number one.
+
+The format for using the jar this way is -jar Show-Top-Trends.jar filter inputPath outputPath
+Where filter is the location that you are filtering the query by, inputPath is the path to the file that contains the dataset to be queries and outputPath is 
+the path to the folder that will hold the output.
+
+--TrendTracker--
+
+This method will, for a given trend, find every time that the trend was trending and will show the name, location, date, hour, and rank the trend had each time
+that it was trending.
+
+The format for this jar is =jar TrendTracker filter, inputPath, outputPath
+Where filter is the name of the trend that you are filtering the query by, inputPath is the path to the file that contains the dataset to be queries 
+and outputPath is the path to the folder that will hold the output.
