@@ -1,7 +1,6 @@
 # revature_project_2
 Edward Reed, Danny Lee, and Nahshon Williams project 2 for the Big Data October 2020 branch
 
-
 ### Project 2
 This is a template, to be filled out by each group and placed in their git repo titled README.md
 Requirements:
@@ -11,6 +10,7 @@ Requirements:
 - Produce a one or more .jar files for your analysis.  Multiple smaller jar files are preferred.
 
 ### Presentations
+- Slidedeck available at [Google Slides](https://docs.google.com/presentation/d/1lLRurZ2vWOgnxs5fW4wb1SesEzePjp74hbhkxUschBU/edit?usp=sharing)
 - Bring a simple slide deck providing an overview of your results.  You should present your results, a high level overview of the process used to achieve those results, and any assumptions and simplifications you made on the way to those results.
 - I may ask you to run an analysis on the day of the presentation, so be prepared to do so.
 - We'll have 20 minutes per group, so make sure your presentation can be covered in that time, focusing on the parts of your analysis you find most interesting.
