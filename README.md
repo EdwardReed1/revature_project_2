@@ -1,8 +1,7 @@
-# revature_project_2
+# Revature_project_2
 Edward Reed, Danny Lee, and Nahshon Williams project 2 for the Big Data October 2020 branch
 
 ### Project 2
-This is a template, to be filled out by each group and placed in their git repo titled README.md
 Requirements:
 - Create a Spark Application that processes Twitter data
 - Your project 2 pitch should involve some analysis of twitter data.  This can be the central feature.  Your final application should work, to some extent, with both streaming and historical data.
@@ -20,8 +19,10 @@ Requirements:
 - Apache Spark
 - Spark SQL
 - YARN
-- HDFS and/or S3
+- HDFS/Google Cloud Storage
+- Google Dataproc
 - Scala 2.12.10
+- Sbt
 - Git + GitHub
 
 ### Due Date
