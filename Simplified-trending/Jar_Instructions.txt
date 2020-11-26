@@ -1,12 +1,11 @@
-This document will detail what each jar in this folder does, and the correct agruments to use in the jar.  If you want to see the code for each jar, 
-they are all in the Trending_queries folder in the gitgub repository and that folder can be imported an ran as a project in IntelliJ which also has
+This document will detail what each jar in this folder does, and the correct arguments to use in the jar.  If you want to see the code for each jar, they are all in the Trending_queries folder in the Github repository and that folder can be imported an ran as a project in IntelliJ which also has
 and input file that can be queried by each method. There is also documentation before each method in the project so you can see which jar it corresponds to.
-The jars were too big to be pushed to github, so a google drive folder was created instead, here is the link to the folder: 
+The jars were too big to be pushed to github, so a google drive folder was created instead, here is the link to the folder:
 
 https://drive.google.com/drive/folders/1GIPoEdM4DBo7Z6XwmLnkQ6AeXZgW86nM?usp=sharing
 
 Also one thing to note about all of the jars, they all create a folder that will hold the output as a .csv file and they have the overwrite option
-enabled, so if you specify the output folder name as the same one as a folder that already exists, the pre-existing folder will be overwritten by the 
+enabled, so if you specify the output folder name as the same one as a folder that already exists, the pre-existing folder will be overwritten by the
 output, so be careful what you call the output folder when using the jars otherwise a folder that you already have could be deleted and replaced.
 
 
